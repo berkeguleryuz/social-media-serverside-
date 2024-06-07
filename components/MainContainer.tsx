@@ -21,6 +21,9 @@ function MainContainer({ children }: { children: React.ReactNode }) {
         <h1 className="mb-5 text-2xl font-bold max-sm:text-md max-sm:font-semibold">
           {title}
         </h1>
+        <div className="h-screen overflow-y-scroll custom-scrollbar">
+          {children}
+        </div>
       </div>
     </section>
   );
