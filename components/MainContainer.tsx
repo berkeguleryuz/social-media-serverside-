@@ -8,9 +8,8 @@ import { pageTitles } from "@/constants";
 function MainContainer({ children }: { children: React.ReactNode }) {
   const currentPath = usePathname();
   const regex = /^\/([^\/]+)/;
-  const firstPath = currentPath.match(regex)
-    ? currentPath.match(regex)[0]
-    : currentPath;
+  const matchResult = currentPath.match(regex);
+  const firstPath = matchResult ? matchResult[0] : currentPath;
 
   const title = pageTitles.find((page) => page.url === firstPath)?.title || "";
 
