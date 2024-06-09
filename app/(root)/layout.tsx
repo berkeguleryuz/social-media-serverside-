@@ -30,11 +30,9 @@ export default function RootLayout({
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange>
-            <main className="flex flex-row">
+            <main className="flex flex-row min-h-screen max-h-screen">
               <LeftSideBar />
-              <MainContainer>
-                {children}
-              </MainContainer>
+              <MainContainer>{children}</MainContainer>
               <RightSideBar />
             </main>
             <BottomBar />

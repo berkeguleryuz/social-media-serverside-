@@ -15,7 +15,7 @@ function MainContainer({ children }: { children: React.ReactNode }) {
   const title = pageTitles.find((page) => page.url === firstPath)?.title || "";
 
   return (
-    <section className="flex flex-col flex-1 max-w-3xl px-4 md:px-10 lg:px-4 xl:px-20">
+    <section className="flex flex-col flex-1 max-w-6xl px-4 md:px-10 lg:px-4 xl:px-20">
       <Nav />
       <div className="mt-6 mb-20">
         <h1 className="mb-5 text-2xl font-bold max-sm:text-md max-sm:font-semibold">

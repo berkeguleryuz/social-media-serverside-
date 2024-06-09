@@ -37,10 +37,10 @@ function Nav() {
       </div>
       <Button onClick={() => router.push("/create-post")}>
         <Add />
-        Create A Post
+        <p>Create A Post</p>
       </Button>
 
-      <div className="flex gap-3 items-center">
+      <div className="flex gap-3 items-center ">
         <SignedIn>
           <UserButton />
         </SignedIn>
@@ -48,11 +48,10 @@ function Nav() {
           <SignInButton />
         </SignedOut>
         <SignOutButton>
-          <div className="flex cursor-pointer items-center md:hidden">
+          <div className="flex cursor-pointer items-center ">
             Logout
           </div>
         </SignOutButton>
-        <ModeToggle />
 
         <Link href={"/"}>
           <Image
