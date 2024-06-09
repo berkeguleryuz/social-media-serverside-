@@ -86,7 +86,7 @@ export async function POST(req: Request) {
     } catch (err) {
       console.error("Error deleting user:", err);
       return new Response("Error occured", {
-        status: 500,
+        status: 500,  
       });
     }
   }
